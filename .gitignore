@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Артефакты прогонов
+results/*.xlsx
+*.log
+
+# Локальный конфиг с корпоративными значениями тарифной модели
+# (тарифы, длины плеч и т.п.). В репозитории - только config_example.py.
+src/config.py
+
+# Скрипт генерации синтетических данных - не публикуется,
+# в репозитории только сами сгенерированные данные в data/.
+generate_synthetic_data.py
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Если решите НЕ публиковать сгенерированный датасет, раскомментируйте:
+# data/*.csv
+# data/*.xlsx
